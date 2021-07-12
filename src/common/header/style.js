@@ -66,13 +66,13 @@ export const SearchWrapper = styled.div`
     }
     
     .slide-enter{
-        transition:all .2s ease-out;
+        transition:all .4s ease-out;
     }
     .slide-enter-active{
-        width: 400px;
+        width: 280px;
     }
     .slide-exit{
-        transition:all .3s ease-out;
+        transition:all .4s ease-out;
     }
     .slide-enter-active{
         width: 160px;
@@ -100,7 +100,7 @@ export const NavSearch = styled.input.attrs({ placeholder : '搜索' })`
     }
 
     &.focused{
-        width:400px;
+        width:280px;
     }
 `
 
@@ -127,4 +127,49 @@ export const Button = styled.button`
         color:#fff;
         background:#ec6149;
     }
+`
+export const SearchInfo = styled.div`
+    position:absolute;
+    left:0;
+    top:56px;
+    width: 240px;
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    padding: 0 20px;
+    margin-left: 20px;
+
+    display:none;
+
+    &.focused{
+        display:block;
+    }
+`
+
+export const SearchInfoTitle = styled.div`
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height:20px;
+    font-size:14px;
+    color:#969696;
+`;
+
+export const SearchInfoSwitch = styled.a`
+    float:right;
+    font-size:13px;
+`;
+
+export const SearchInfoItem  = styled.a`
+    display:block;
+    float:left;
+    line-height:20px;
+    padding:0 5px;
+    font-size:12px;
+    border:1px solid #ddd;
+    color:#787878;
+    border-radius:2px;
+    margin-right:10px;
+    margin-bottom:10px;
+`
+
+export const SearchInfoList = styled.div`
+    overflow:hidden;
 `

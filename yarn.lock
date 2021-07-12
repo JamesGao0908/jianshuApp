@@ -2657,6 +2657,13 @@ axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.2.tgz#7cf783331320098bfbef620df3b3c770147bc224"
   integrity sha512-V+Nq70NxKhYt89ArVcaNL9FDryB3vQOd+BFXZIfO3RP6rwtj+2yqqqdHEkacutglPaZLkJeuXKCjCJDMGPtPqg==
 
+axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz?cache=0&sync_timestamp=1608609173718&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
+  dependencies:
+    follow-redirects "^1.10.0"
+
 axobject-query@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
@@ -5209,6 +5216,11 @@ follow-redirects@^1.0.0:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.2.tgz#dd73c8effc12728ba5cf4259d760ea5fb83e3147"
   integrity sha512-6mPTgLxYm3r6Bkkg0vNM0HTjfGrOEtsfbhagQvbxDEsEkpNhw582upBaoRZylzen6krEmxXJgt9Ju6HiI4O7BA==
 
+follow-redirects@^1.10.0:
+  version "1.14.1"
+  resolved "https://registry.nlark.com/follow-redirects/download/follow-redirects-1.14.1.tgz#d9114ded0a1cfdd334e164e6662ad02bfd91ff43"
+  integrity sha1-2RFN7Qoc/dM04WTmZirQK/2R/0M=
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
@@ -5838,6 +5850,11 @@ immer@8.0.1:
   version "8.0.1"
   resolved "https://registry.nlark.com/immer/download/immer-8.0.1.tgz?cache=0&sync_timestamp=1625500460894&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fimmer%2Fdownload%2Fimmer-8.0.1.tgz#9c73db683e2b3975c424fb0572af5889877ae656"
   integrity sha1-nHPbaD4rOXXEJPsFcq9YiYd65lY=
+
+immutable@^4.0.0-rc.14:
+  version "4.0.0-rc.14"
+  resolved "https://registry.nlark.com/immutable/download/immutable-4.0.0-rc.14.tgz?cache=0&sync_timestamp=1625767250926&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fimmutable%2Fdownload%2Fimmutable-4.0.0-rc.14.tgz#29ba96631ec10867d1348515ac4e6bdba462f071"
+  integrity sha1-KbqWYx7BCGfRNIUVrE5r26Ri8HE=
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -9376,6 +9393,16 @@ redent@^3.0.0:
   dependencies:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
+
+redux-immutable@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/redux-immutable/download/redux-immutable-4.0.0.tgz#3a1a32df66366462b63691f0e1dc35e472bbc9f3"
+  integrity sha1-Ohoy32Y2ZGK2NpHw4dw15HK7yfM=
+
+redux-thunk@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.npm.taobao.org/redux-thunk/download/redux-thunk-2.3.0.tgz#51c2c19a185ed5187aaa9a2d08b666d0d6467622"
+  integrity sha1-UcLBmhhe1Rh6qpotCLZm0NZGdiI=
 
 redux@^4.0.0, redux@^4.1.0:
   version "4.1.0"
