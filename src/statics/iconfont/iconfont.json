@@ -6,6 +6,20 @@
   "description": "jianshu iconfont",
   "glyphs": [
     {
+      "icon_id": "1327477",
+      "name": "fresh",
+      "font_class": "fresh",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    },
+    {
+      "icon_id": "1198131",
+      "name": "refresh",
+      "font_class": "refresh",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
       "icon_id": "1621077",
       "name": "Aa",
       "font_class": "Aa",

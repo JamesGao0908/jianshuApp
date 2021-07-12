@@ -6,7 +6,6 @@ const defaultState = fromJS({
     list: [],
     page: 0,
     totalPage: 0,
-
 });
 
 export default function reducer (state = defaultState, action ) {

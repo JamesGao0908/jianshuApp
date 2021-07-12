@@ -137,10 +137,11 @@ export const SearchInfo = styled.div`
     padding: 0 20px;
     margin-left: 20px;
 
-    display:none;
+    display:block;
 
     &.focused{
         display:block;
+        z-index: 1;
     }
 `
 
@@ -155,6 +156,12 @@ export const SearchInfoTitle = styled.div`
 export const SearchInfoSwitch = styled.a`
     float:right;
     font-size:13px;
+
+    .iconfont{
+        float:left;
+        position: relative;
+    }
+
 `;
 
 export const SearchInfoItem  = styled.a`

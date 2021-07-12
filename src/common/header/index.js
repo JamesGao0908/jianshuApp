@@ -1,7 +1,7 @@
 import React from 'react';
 import { CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
-import * as actionCreators  from './store/actionCreators';
+import * as actionsCreator  from './store/actionsCreator';
 
 import { HeaderWrapper, Logo, Nav, NavItem, NavSearch , SearchWrapper ,Addition, 
         Button, SearchInfo, SearchInfoTitle, SearchInfoSwitch, SearchInfoItem,
@@ -15,8 +15,6 @@ class Header extends React.Component {
         for( let i = (this.props.page * 10 ); i < (this.props.page+1) * 10; i ++ ){
             pageList.push( <SearchInfoItem key={i}>{newList[i]}</SearchInfoItem> );
         }
-        console.log(this.props.page);
-        console.log(pageList);
 
         return (
             <HeaderWrapper>
@@ -35,13 +33,13 @@ class Header extends React.Component {
                             classNames = 'slide'>
                                 <NavSearch 
                                     className = {this.props.focused ? 'focused':'' }
-                                    onFocus = {this.props.handleFocus}
+                                    onFocus = {()=>this.props.handleFocus(this.props.list)}
                                     onBlur = {this.props.handleBlur} />
                         </CSSTransition>
                         <i className={this.props.focused ? 'focused iconfont':'iconfont' }>&#xe60f;</i>
                         <SearchInfo className = { (this.props.focused || this.props.mouseIn) ? 'focused':''} onMouseOver={this.props.handleMouseEnter} onMouseLeave={this.props.handleMouseLeave} >
                             <SearchInfoTitle>热门搜索
-                                <SearchInfoSwitch onClick={()=>this.props.handleUpdateList(this.props.page) }>换一换</SearchInfoSwitch>
+                                <SearchInfoSwitch onClick={()=>this.props.handleUpdateList(this.props.page) }> <i className='iconfont'>&#xe606;</i>换一换</SearchInfoSwitch>
                             </SearchInfoTitle>
                             <SearchInfoList>
                                 {pageList}
@@ -82,21 +80,23 @@ const mapStateToProps = (state) => {
 */ 
 const mapDispathToProps = (dispatch) => {
     return {
-        handleFocus(){
-            dispatch(actionCreators.getList());
-            dispatch(actionCreators.searchFocus());
+        handleFocus(list){
+            if(list.size === 0)
+                dispatch(actionsCreator.getList());
+            
+            dispatch(actionsCreator.searchFocus());
         },
         handleBlur(){
-            dispatch(actionCreators.searchBlur());
+            dispatch(actionsCreator.searchBlur());
         },
         handleMouseEnter(){
-            dispatch(actionCreators.mouseEnter());
+            dispatch(actionsCreator.mouseEnter());
         },
         handleMouseLeave(){
-            dispatch(actionCreators.mouseLeave());
+            dispatch(actionsCreator.mouseLeave());
         },
         handleUpdateList(e){
-            dispatch(actionCreators.updateList(e));
+            dispatch(actionsCreator.updateList(e));
         },
     }
 }
