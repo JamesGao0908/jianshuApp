@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actionsCreator  from './store/actionsCreator.js';
+import Board from './components/Board';
+import Recommendwriters from './components/Recommendwriters';
 
 import { HomeWrapper, HomeLeft, HomeRight, ArticleContainer, LoadMoreArticleButton,
     ArticleList, ArticleItem } from './styled';
@@ -43,7 +45,8 @@ class Home extends React.Component{
                     <LoadMoreArticleButton>加载更多</LoadMoreArticleButton>
                 </HomeLeft>
                 <HomeRight>
-                    
+                    <Board />
+                    <Recommendwriters />
                 </HomeRight>
             </HomeWrapper>
         )

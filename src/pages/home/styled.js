@@ -22,10 +22,8 @@ export const HomeLeft = styled.div`
 export const ArticleContainer = styled.div`
     margin-top:15px;
 `
-
 export const ArticleList = styled.ul`
 `
-
 export const ArticleItem = styled.li`
     position:relative;
     width:100%;
@@ -110,7 +108,6 @@ export const ArticleItem = styled.li`
         }
     }
 `
-
 export const LoadMoreArticleButton = styled.a`
     display: block;
     cursor: pointer;
@@ -123,7 +120,6 @@ export const LoadMoreArticleButton = styled.a`
     color: #fff;
     background-color: #a5a5a5;
 `
-
 export const HomeRight = styled.div`
     float:right;
     width : 240px;
