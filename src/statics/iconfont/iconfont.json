@@ -6,6 +6,62 @@
   "description": "jianshu iconfont",
   "glyphs": [
     {
+      "icon_id": "169528",
+      "name": "指南针",
+      "font_class": "zhinanzhen",
+      "unicode": "e695",
+      "unicode_decimal": 59029
+    },
+    {
+      "icon_id": "4338075",
+      "name": "iPhone X",
+      "font_class": "iPhoneX",
+      "unicode": "e736",
+      "unicode_decimal": 59190
+    },
+    {
+      "icon_id": "22860398",
+      "name": "指南针",
+      "font_class": "zhinanzhen-copy",
+      "unicode": "e737",
+      "unicode_decimal": 59191
+    },
+    {
+      "icon_id": "22844810",
+      "name": "夜间模式",
+      "font_class": "yejianmoshi-copy",
+      "unicode": "e709",
+      "unicode_decimal": 59145
+    },
+    {
+      "icon_id": "579291",
+      "name": "赏",
+      "font_class": "shang",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "739033",
+      "name": "like",
+      "font_class": "like",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "2206268",
+      "name": "icon-diamond",
+      "font_class": "diamond",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "11770067",
+      "name": "Message",
+      "font_class": "Message",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
       "icon_id": "1327477",
       "name": "fresh",
       "font_class": "fresh",

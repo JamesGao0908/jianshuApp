@@ -6,6 +6,10 @@ const defaultState = fromJS({
     list: [],
     page: 0,
     totalPage: 0,
+
+    AaMouseIn:false,
+    nightMode: false,
+    fontDefault: true,
 });
 
 export default function reducer (state = defaultState, action ) {
@@ -31,6 +35,21 @@ export default function reducer (state = defaultState, action ) {
                 return state.set('page',0);
             else
                 return state.set('page', action.value+1);
+        }
+        case 'change_night_mode':{
+            return state.set('nightMode', fromJS(!state.toJS().nightMode));
+        }
+        case 'change_default_font':{
+            return state.set('fontDefault', fromJS(!state.toJS().fontDefault)); 
+        }
+        case 'popup_widget' :{
+            return state.set('AaMouseIn', true);  
+        }
+        case 'mouse_enter_Aa' : {
+            return state.set('AaMouseIn', true);  
+        }
+        case 'mouse_leave_Aa' : {
+            return state.set('AaMouseIn', false);  
         }
         default :
             return state;

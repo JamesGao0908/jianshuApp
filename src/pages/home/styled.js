@@ -4,6 +4,12 @@ export const HomeWrapper = styled.div`
     width:960px;
     margin: 0 auto;
     overflow: hidden;
+    
+    &.active{
+        a, p{
+            font-family: cursive;
+        }
+    }
 `
 export const HomeLeft = styled.div`
     display:flex;
@@ -14,6 +20,7 @@ export const HomeLeft = styled.div`
     padding-top:30px;
 `
 export const ArticleContainer = styled.div`
+    margin-top:15px;
 `
 
 export const ArticleList = styled.ul`
@@ -27,6 +34,7 @@ export const ArticleItem = styled.li`
     padding: 15px 2px 2px 0;
     border-bottom: 1px solid #f0f0f0;
     word-wrap: break-word;
+    box-sizing: border-box;
 
     .wrap-img{
         position:absolute;
@@ -35,7 +43,6 @@ export const ArticleItem = styled.li`
         right:0;
         height:100px;
         width:150px;
-
 
         .img-blur-done{
             width:100%;
@@ -75,7 +82,21 @@ export const ArticleItem = styled.li`
             box-sizing:border-box;
 
             span{
-                margin-right:10px;
+                box-sizing: border-box;
+                margin-right: 10px;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 20px;
+                color:#b4b4b4;
+
+                .iconfont{
+                    font-family: iconfont!important;
+                    font-size: inherit;
+                    font-style: normal;
+                    font-weight: 400!important;
+                    -webkit-font-smoothing: antialiased;
+                    box-sizing: border-box;
+                }
             }
             a{
                 margin-right:10px;
@@ -90,8 +111,17 @@ export const ArticleItem = styled.li`
     }
 `
 
-
-export const LoadMoreArticleButton = styled.button`
+export const LoadMoreArticleButton = styled.a`
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 30px auto 60px;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #a5a5a5;
 `
 
 export const HomeRight = styled.div`

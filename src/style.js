@@ -1,3 +1,7 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle =  createGlobalStyle`
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,9 +27,21 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+
+body{
 	line-height: 1;
+	a {
+		color: #333;
+	}
+	
+	&.reader-night-mode{
+		background-color: #3f3f3f;
+		a {
+			color: #c8c8c8;
+		}
+	}
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -41,3 +57,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+*{
+	box-sizing: border-box;
+}
+
+`
+
+export default GlobalStyle;

@@ -32,3 +32,22 @@ export const updateList = (e) => ({
     value: e,
 });
 
+export const changeNightMode = ()=>({
+    type:'change_night_mode'
+})
+
+export const changeDefaultFont = ()=>({
+    type: 'change_default_font'
+})
+
+export const changeWidgetPopup = ()=>({
+    type:'popup_widget'
+})
+
+export const mouseEnterAa = ()=>({
+    type:'mouse_enter_Aa'
+})
+
+export const mouseLeaveAa = ()=>({
+    type:'mouse_leave_Aa'
+})

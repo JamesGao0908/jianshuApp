@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2340981 */
-  src: url('iconfont.woff2?t=1626063448523') format('woff2'),
-       url('iconfont.woff?t=1626063448523') format('woff'),
-       url('iconfont.ttf?t=1626063448523') format('truetype');
+  src: url('iconfont.woff2?t=1626173745897') format('woff2'),
+       url('iconfont.woff?t=1626173745897') format('woff'),
+       url('iconfont.ttf?t=1626173745897') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,38 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.iconzhinanzhen:before {
+  content: "\e695";
+}
+
+.iconiPhoneX:before {
+  content: "\e736";
+}
+
+.iconzhinanzhen-copy:before {
+  content: "\e737";
+}
+
+.iconyejianmoshi-copy:before {
+  content: "\e709";
+}
+
+.iconshang:before {
+  content: "\e611";
+}
+
+.iconlike:before {
+  content: "\e61e";
+}
+
+.icondiamond:before {
+  content: "\e622";
+}
+
+.iconMessage:before {
+  content: "\e657";
 }
 
 .iconfresh:before {

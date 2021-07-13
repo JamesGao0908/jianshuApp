@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import { connect } from 'react-redux';
 import * as actionsCreator  from './store/actionsCreator';
 
-import { HeaderWrapper, Logo, Nav, NavItem, NavSearch , SearchWrapper ,Addition, 
+import { HeaderWrapper, Logo, Nav, NavItem, NavItemAa, NavSearch , SearchWrapper ,Addition, 
         Button, SearchInfo, SearchInfoTitle, SearchInfoSwitch, SearchInfoItem,
         SearchInfoList} from './style';
 
@@ -20,11 +20,26 @@ class Header extends React.Component {
             <HeaderWrapper>
                 <Logo href='/'/>
                 <Nav >
-                    <NavItem className='left active'>首页</NavItem>
-                    <NavItem className='left'>下载App</NavItem>
+                    <NavItem className='left active'><i className='iconfont'>&#xe695;</i>首页</NavItem>
+                    <NavItem className='left'><i className='iconfont'>&#xe736;</i>下载App</NavItem>
                     <NavItem className='right'>登陆</NavItem>
                     <NavItem className='right'>
-                        <i className='iconfont'>&#xe636;</i>
+                        <i className='iconfont' onClick={this.props.handleWidgetPopup}>&#xe636;</i>
+                        <NavItemAa className={this.props.AaMouseIn ? 'focused' : ''} onMouseOver={this.props.handleMouseEnterAa} onMouseLeave={this.props.handleMouseLeaveAa}  >
+                            <div className = 'meta'>
+                                <i className='iconfont'>&#xe612;</i>
+                                <span>夜间模式</span>
+                            </div>
+                            <div className='switch day-night-group'>
+                                <a href='#/' className={this.props.nightMode ? 'switch-btn active' : 'switch-btn'} onClick={()=>{ this.props.handleNightModeChange(); document.body.className = 'reader-night-mode';}}>On</a>
+                                <a href='#/' className={this.props.nightMode ? 'switch-btn' : 'switch-btn active'} onClick={()=>{ this.props.handleNightModeChange(); document.body.className = ''; }}>Off</a>
+                            </div>
+                            <hr/>
+                            <div className='switch font-family-group'>
+                                <a href='#/' className={this.props.fontDefault ? 'switch-btn font-song active': 'switch-btn font-song'} onClick={ ()=>{this.props.handleChangeDefaultFont() }}>字体-宋体</a>
+                                <a href='#/' className={this.props.fontDefault ? 'switch-btn font-hei': 'switch-btn font-hei active'} onClick={()=>{this.props.handleChangeDefaultFont() }}>字体-黑体</a>
+                            </div>
+                        </NavItemAa>
                     </NavItem>
                     <SearchWrapper>
                         <CSSTransition
@@ -69,6 +84,9 @@ const mapStateToProps = (state) => {
         list : state.get('header').get('list'),
         page: state.get('header').get('page'),
         totalPage : state.get('header').get('totalPage'),
+        nightMode : state.get('header').get('nightMode'),
+        fontDefault : state.get('header').get('fontDefault'),
+        AaMouseIn : state.get('header').get('AaMouseIn'),
     }
 }
 
@@ -98,6 +116,22 @@ const mapDispathToProps = (dispatch) => {
         handleUpdateList(e){
             dispatch(actionsCreator.updateList(e));
         },
+        handleNightModeChange(){
+            dispatch(actionsCreator.changeNightMode());
+        },
+        handleChangeDefaultFont(){
+            dispatch(actionsCreator.changeDefaultFont());
+        },
+        handleWidgetPopup(){
+            dispatch(actionsCreator.changeWidgetPopup());
+        },
+        handleMouseEnterAa(){
+            dispatch(actionsCreator.mouseEnterAa());
+        },
+        handleMouseLeaveAa(){
+            dispatch(actionsCreator.mouseLeaveAa());
+        },
+
     }
 }
 
