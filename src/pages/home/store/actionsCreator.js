@@ -17,3 +17,20 @@ const loadArticleInfo = (e)=>({
     type:'load_article_info',
     value:fromJS(e)
 });
+
+export const fetchWriterList = ()=>{
+    return (dispatch)=>{
+        axios.get('./apis/writerList.json')
+        .then((res)=>{
+            dispatch(loadWriterList(res.data.list));
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+    }
+}
+
+const loadWriterList = (e)=>({
+    type: 'load_writer_list',
+    value: e
+})

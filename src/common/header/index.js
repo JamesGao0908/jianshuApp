@@ -27,7 +27,7 @@ class Header extends React.Component {
                         <i className='iconfont' onClick={this.props.handleWidgetPopup}>&#xe636;</i>
                         <NavItemAa className={this.props.AaMouseIn ? 'focused' : ''} onMouseOver={this.props.handleMouseEnterAa} onMouseLeave={this.props.handleMouseLeaveAa}  >
                             <div className = 'meta'>
-                                <i className='iconfont'>&#xe612;</i>
+                                <i className='iconfont'>&#xe709;</i>
                                 <span>夜间模式</span>
                             </div>
                             <div className='switch day-night-group'>

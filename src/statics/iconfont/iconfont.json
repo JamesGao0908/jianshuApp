@@ -6,6 +6,27 @@
   "description": "jianshu iconfont",
   "glyphs": [
     {
+      "icon_id": "9613611",
+      "name": "加号",
+      "font_class": "hao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "15823668",
+      "name": "加号",
+      "font_class": "hao1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "20273323",
+      "name": "加号",
+      "font_class": "plus",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
       "icon_id": "169528",
       "name": "指南针",
       "font_class": "zhinanzhen",

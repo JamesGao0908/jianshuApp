@@ -45,14 +45,17 @@ body{
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -62,6 +65,10 @@ table {
 	box-sizing: border-box;
 }
 
-`
+img{
+	vertical-align: middle;
+	border: 0;
+}
 
+`
 export default GlobalStyle;
